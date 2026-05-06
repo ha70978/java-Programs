@@ -1,0 +1,22 @@
+import java.util.Arrays;
+
+public class ArrayCopyMethods {
+    public static void main(String[] args) {
+
+        int[] original = {10, 20, 30, 40};
+
+    
+        int[] copy1 = original.clone();
+
+    
+        int[] copy2 = Arrays.copyOf(original, original.length);
+
+    
+        int[] copy3 = new int[original.length];
+        System.arraycopy(original, 0, copy3, 0, original.length);
+
+        System.out.println("Clone: " + Arrays.toString(copy1));
+        System.out.println("copyOf: " + Arrays.toString(copy2));
+        System.out.println("arraycopy: " + Arrays.toString(copy3));
+    }
+}

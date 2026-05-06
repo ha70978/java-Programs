@@ -18,6 +18,7 @@ class hari {
         System.out.println(arr);
 
         Collections.sort(arr);   
+        
 
         System.out.println(arr);
     }
